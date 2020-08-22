@@ -1,0 +1,78 @@
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		nav{
+		    background-color: orange;
+		    top: 0px;
+		    left: 0px;
+		    position: sticky;
+		    position: -webkit-sticky;
+		}
+		.items{
+		    display: flex;
+		    flex: 3;
+			margin: 1% 5%;
+			padding: 1%;
+			background-color: cyan;
+			border: 2px solid gold;
+		}
+		.main{
+		    margin: 10px 20px;
+			text-align: center;
+			align-items: center;
+			display: block;
+			background-color: white;
+			box-shadow: 3px 3px red;
+			height: 22em;
+			width: 22em;
+		}
+		.first{
+		    margin: 2px 2px;
+			text-align: center;
+			/*position: relative;*/
+			height: 12em;
+			width: 100%;
+		}
+		.first img{
+			height: 12em;
+			width: 100%;
+		}
+		.first:hover{
+			filter: opacity(0.8);
+		}
+		.price{
+			font-size: 20px;
+			cursor: pointer;
+			height: 2em;
+			background-color: orange;
+			color: red;
+		}
+		.discription{
+			font-weight: 700;
+			height: 5em;
+		}
+		#item1{
+		    text-transform: uppercase;
+		}
+		.tiffin{
+			height: 8em;
+			width: 100%;
+			background-color: yellow;
+			color: blue;
+		}
+		#aa{
+			margin-left: 1em;
+		}
+		#quan{
+			margin-left: 1em;
+			background-color: white;
+		}
+		#tot{
+			margin-left: 1em;
+			background-color: white;
+		}
+		#ab{
+			margin-left: 1em;
+		}
+		

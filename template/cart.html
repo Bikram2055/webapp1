@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>cart</title>
+	<link rel="stylesheet" type="text/css" href="cart.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<div class="wrap">
+		<div>
+			<strong>E-ORDER TIFFIN WIDGET</strong>
+		</div>
+		<div class="head">
+			<h1 class="ba">Recipes</h1><h1 class="a">Quantity</h1><h1 class="b">Price</h1>
+		</div>
+		<div class="items">
+			<img src=""><div class="disc">describe</div><button id="ab">-</button><div class="box">1</div><button id="aa">+</button><b class="e">Rs.200</b><button class="i">x</button>
+		</div>
+		<div class="total">
+			<label class="c"><b class="ab">Total Price</b></label><b class="d">Rs.total</b>
+		</div>
+		<div class="final">
+			<b>Discount</b><div class="box1">5%</div><label>=Rs.10</label><label class="fp">Final Price</label><b class="fp1">Rs.200</b>
+			<button class="btn">Checkout</button>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+		$('#aa').click(function(){
+			var b = $('.box').text();
+			b=parseInt(b, 10);
+			b = b+1;
+			$('.box').text(b);
+		});
+	});
+	$(document).ready(function(){
+		$('#ab').click(function(){
+			var b = $('.box').text();
+			b=parseInt(b, 10);
+			b = b-1;
+			if (b<1){
+				b=1;
+			}
+			$('.box').text(b);
+		});
+	});
+	</script>
+</body>
+</html>

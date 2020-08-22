@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+	<title>shop</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'menu.css' %}">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<script src="{% static 'all.js' %}"></script>
+
+</head>
+<body>
+	<div class="items">
+		{% for first in first%}
+		<div class="main">
+			<div class="first">
+				<img src="{{first.image.url}}">
+			</div>
+			<div class="price"> Rs.<b id="p1">{{first.price}}</b></div>
+			<div class=".discription">
+				<b id="item1">{{first.name}}</b>
+				<p>{{first.describe}}</p>
+			</div>
+			<div>
+				<button class="snipcart-add-item btn btn-primary" id="btn">
+				   	<i class="icon icon-plus"></i>
+                    Add to Tiffin
+                </button>
+			</div>
+		</div>
+		{% endfor %}
+	</div>
+	<div class="tiffin">
+		<label>Item:</label>
+		<b class="item">item name</b><br>
+		<label>Quantity:<button id="ab">-</button><b id="quan">1</b></label>
+		<button id="aa">+</button><br>
+		<label>Price:</label>
+		<b class="price1">price</b><br>
+		<label>Total:<b id="tot">total</b></label>
+	</div>
+
+</body>
+</html>
