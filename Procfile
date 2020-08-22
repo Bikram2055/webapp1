@@ -1,1 +1,1 @@
-web: gunicorn webapp1.wsgi --log-file --
+web: gunicorn bikram-bishal.wsgi --log-file --
