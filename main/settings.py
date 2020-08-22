@@ -132,3 +132,6 @@ MEDIA_URL = "/media/"
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+django_heroku.settings(locals())
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
