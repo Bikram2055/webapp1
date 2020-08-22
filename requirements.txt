@@ -2,4 +2,3 @@ django
 gunicorn
 whitenoise
 django-heroku
-setuptools==0.7.3
