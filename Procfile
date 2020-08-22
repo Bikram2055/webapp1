@@ -1,1 +1,1 @@
-web: gunicorn bikram-bishal.wsgi --log-file --
+web: gunicorn tiffin--service.wsgi --log-file --
